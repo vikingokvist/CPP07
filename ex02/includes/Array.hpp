@@ -10,7 +10,7 @@ class Array
 {
 	private:
 		T *array;
-		unsigned int size;
+		unsigned int length;
 
 	public:
 		Array();
@@ -23,13 +23,12 @@ class Array
 		
 		unsigned int size() const;
 		
-		class OutOfBoundsException : std::exception {
+		class IndexOutOfBoundsException : public std::exception {
 			public:
-				const char* what() const trow();
-		}
+				const char* what() const throw();
+		};
 };
 
 # include "./Array.tpp"
-
 
 #endif

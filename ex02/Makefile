@@ -1,11 +1,11 @@
-NAME = execute #Change this if wanted
+NAME = Array
 
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 RM = rm -rf
 
-SRCS = src/main.cpp src/Array.cpp
+SRCS = src/main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
